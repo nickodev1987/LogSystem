@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Database;
 
-namespace DataAccess
+namespace DataAccess.Services
 {
-    public class Class1
+    interface IUserMagnagmentService
     {
+        IEnumerable<User> GetAllUsers();
     }
 }
